@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site</title>
+    <title>Menu de la Cantine</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>MENU du jour</h1>
-    <p>MENU de la semaine</p>
+    <header id="header">
+        <h1>Menu de la Cantine</h1>
+    </header>
+    
+    <div id="nav-menu">
+        <button class="day-btn" onclick="showMenu('lundi')">Lundi</button>
+        <button class="day-btn" onclick="showMenu('mardi')">Mardi</button>
+        <button class="day-btn" onclick="showMenu('jeudi')">Jeudi</button>
+        <button class="day-btn" onclick="showMenu('vendredi')">Vendredi</button>
+    </div>
+
+    <main id="main-content">
+        <section id="menu-today">
+            <h2 id="day-title">Sélectionner un jour</h2>
+            <ul id="menu-list">
+                <!-- Les menus changeront ici -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer id="footer">
+        <p>&copy; 2024 S_A_C_U_L_A</p>
+    </footer>
+
 </body>
 </html>
