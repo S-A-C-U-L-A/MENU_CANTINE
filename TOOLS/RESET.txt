@@ -1,0 +1,6 @@
+@echo off
+cd..
+echo Réinitialisation des modifications locales et mise à jour depuis GitHub...
+git reset --hard
+git pull origin main
+echo Mise à jour terminée.
